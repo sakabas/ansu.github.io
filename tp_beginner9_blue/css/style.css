@@ -1,6 +1,40 @@
 @charset "utf-8";
 
+.box {
+  display: flex;
+}
+ 
+.box div {
+  width: 90%;
+  margin: 5px;
+}
 
+.box {
+  display: flex;
+  width: 380px;
+  height: 240px;
+  overflow-x: scroll;
+}
+ 
+.box div {
+  width: 90%;
+  margin: 5px;
+  flex-shrink: 0;
+}
+
+.box::-webkit-scrollbar {
+  height: 14px; /* スクロールバーの高さ */
+}
+ 
+.box::-webkit-scrollbar-thumb {
+  background: #d2b48c; /* ツマミの色 */
+  border-radius: 7px; /* ツマミ両端の丸み */
+}
+ 
+.box::-webkit-scrollbar-track {
+  background: #f5deb3; /* トラックの色 */
+  border-radius: 7px; /* トラック両端の丸み */
+}
 
 /*Google Fontsの読み込み
 ---------------------------------------------------------------------------*/
